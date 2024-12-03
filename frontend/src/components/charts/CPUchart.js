@@ -26,7 +26,7 @@ ChartJS.register(
   Legend
 );
 
-const CPUchart = ({ onDataUpdate }) => {
+const CPUChart = ({ onDataUpdate }) => {
   const { systemData, status, error } = useSystemData();
 
   const [cpuLoadHistory, setCpuLoadHistory] = useState([]);
@@ -157,4 +157,4 @@ const CPUchart = ({ onDataUpdate }) => {
   );
 };
 
-export default CPUchart;
+export default CPUChart;

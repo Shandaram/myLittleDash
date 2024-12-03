@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import WidgetBox from "./components/WidgetBox";
-import CPUchart from "./components/charts/CPUchart";
+import CPUChart from "./components/charts/CPUChart";
 import BatteryChart from "./components/charts/BatteryChart";
 import MemoryChart from "./components/charts/MemoryChart";
 import "./styles/index.css";
@@ -14,7 +14,7 @@ function App() {
       <main className="main-container" aria-label="Dashboard widgets">
         <WidgetBox
           className="main-container__item"
-          chart={CPUchart}
+          chart={CPUChart}
           desc="The percentage of CPU resources being used by your system."
           title="CPU Usage"
         />
