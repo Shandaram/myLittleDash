@@ -1,0 +1,76 @@
+  /* Block: dark-mode-toggle */
+.dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Block: switch */
+.switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+}
+
+/* Element: input (part of switch) */
+.switch__input {
+  display: none;
+}
+
+/* Element: background (part of switch) */
+.switch__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #878d96;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Modifier: background when input is checked */
+.switch__input:checked ~ .switch__background {
+  background-color: #21272a;
+}
+
+/* Element: circle (part of switch) */
+.switch__circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: #4d5358;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+/* Modifier: circle in dark mode */
+.switch__circle--dark {
+  background-color: #656565; /* Dark circle color */
+}
+
+/* Modifier: circle when input is checked */
+.switch__input:checked ~ .switch__circle {
+  transform: translateX(30px);
+}
+
+/* Element: icon (part of switch) */
+.switch__icon {
+  color: #001d6c;
+  font-size: 16px;
+}
+
+/* Modifier: icon when input is checked */
+.switch__input:checked ~ .switch__circle .switch__icon {
+  color: #fff;
+}
+
+  

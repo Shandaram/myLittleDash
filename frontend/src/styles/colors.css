@@ -1,0 +1,21 @@
+:root {
+    --background:#f2f4f8 ;
+    --text-color: #232121;
+    --header-color:#dde1e6 ;
+
+    --widget-background: #ffffff;
+    --primary-color: #001d6c;
+
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Dark mode */
+.dark-mode {
+    --background: #121619;
+    --text-color: #dde1e6;
+
+    --widget-background: #000000;
+    --primary-color: #000000;
+
+    --box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 24px;
+  }
