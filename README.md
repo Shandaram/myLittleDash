@@ -1,6 +1,6 @@
 # **System Performance Dashboard**
 
-A responsive and accessible dashboard application that monitors and visualizes system performance metrics in real-time. This project is designed to provide key insights into system health, tracking critical statistics like **CPU load**, **battery status**, and **memory usage**. These metrics are presented through user-friendly widgets.
+A responsive and accessible dashboard application that monitors and visualizes system performance metrics in real-time. This project is designed to provide key insights into system health, tracking critical statistics like **CPU load**, **battery status**, and **memory usage**. These metrics are presented through user-friendly widgets, with dark mode available.
 
 ## **Features**
 - Real-time tracking of system performance metrics.
