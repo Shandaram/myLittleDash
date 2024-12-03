@@ -1,46 +1,92 @@
-# Getting Started with Create React App and Redux
+# **System Performance Dashboard**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+A responsive and accessible dashboard application that monitors and visualizes system performance metrics in real-time. This project is designed to provide key insights into system health, tracking critical statistics like **CPU load**, **battery status**, and **memory usage**. These metrics are presented through user-friendly widgets.
 
-## Available Scripts
+## **Features**
+- Real-time tracking of system performance metrics.
+- Responsive visualizations powered by **Chart.js**.
+- Modular architecture with separate **frontend** and **backend** components.
+- State management with **Redux Toolkit**.
+- Integration with **systeminformation** for accurate system data retrieval.
 
-In the project directory, you can run:
 
-### `npm start`
+## **Project Structure**
+This project is divided into two main components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **1. Frontend**
+- A React-based application for visualizing system metrics.
+- Designed with accessibility and responsiveness in mind.
+- Dependencies include:
+  - **React** for building the user interface.
+  - **Chart.js** and **react-chartjs-2** for interactive graphs.
+  - **Redux Toolkit** and **React-Redux** for state management.
+  - **Axios** for API communication.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Frontend Scripts**:
+- `start`: Starts the development server.
+- `build`: Builds the application for production.
+- `test`: Runs the test suite.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **2. Backend**
+- A lightweight **Node.js** server using **Express**.
+- Provides system metrics through APIs powered by **systeminformation**.
+- Supports CORS to allow cross-origin requests from the frontend.
 
-### `npm run build`
+**Backend Dependencies**:
+- **Express**: Handles server routing and API endpoints.
+- **Systeminformation**: Retrieves system performance metrics.
+- **CORS**: Enables cross-origin communication.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Installation and Usage**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Prerequisites**
+Ensure the following tools are installed on your system:
+- **Node.js** (v16 or later)
+- **npm** (v7 or later)
 
-### `npm run eject`
+### **Setup**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Clone the Repository
+```bash
+git clone https://github.com/your-username/system-monitor-dashboard.git
+cd system-monitor-dashboard
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Install Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Frontend**:
+```bash
+cd frontend
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Backend**:
+```bash
+cd backend
+npm install
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Running the Application**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Start the Backend Server
+Navigate to the backend folder and start the server:
+```bash
+cd backend
+node server.js
+```
+
+The backend server will start on `http://localhost:4000`.
+
+#### Start the Frontend Application
+Open a new terminal, navigate to the frontend folder, and start the development server:
+```bash
+cd frontend
+npm start
+```
+
+The frontend application will be available at `http://localhost:3000`.
+
+---
